@@ -1,11 +1,17 @@
-const { Cinema, Cineplex } = require("../models");
+const { Cinema, Cineplex, Showtime, Seat, Box } = require("../models");
 const { Op } = require("sequelize");
 
 const layThongTinHeThongRap = async (req, res) => {
   const { maHeThongRap } = req.query;
   try {
     if (maHeThongRap === "") {
-      const CineplexList = await Cineplex.findAll();
+      const CineplexList = await Cineplex.findAll({
+        include: [
+          {
+            model: Cinema,
+          },
+        ],
+      });
       res.status(200).send(CineplexList);
     } else if (maHeThongRap) {
       const CineplexList = await Cineplex.findAll({ where: { maHeThongRap } });
@@ -35,6 +41,8 @@ const layThongTinCumRapTheoHeThong = async (req, res) => {
               maHeThongRap,
             },
           },
+          { model: Showtime, include: [{ model: Seat }] },
+          { model: Box },
         ],
       });
       res.status(200).send(CinemaListByCineplex);
