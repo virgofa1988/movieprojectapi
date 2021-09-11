@@ -1,0 +1,668 @@
+{
+	"info": {
+		"_postman_id": "ef46abf7-29b7-4297-af10-eaf0f6771b6f",
+		"name": "movieprojectapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "quanlynguoidung",
+			"item": [
+				{
+					"name": "laydanhsachnguoidung",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/laydanhsachnguoidung",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"laydanhsachnguoidung"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dangki",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taiKhoan\": \"anhtuan991988\",\r\n  \"matKhau\": \"999999\",\r\n  \"email\": \"anhtuan991988@gmail.com\",\r\n  \"soDt\": \"0211474692\",\r\n  \"maNhom\": \"GH01\",\r\n  \"maLoaiNguoiDung\": \"KhachHang\",\r\n  \"hoTen\": \"Nguyen Tuan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/dangki",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"dangki"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dangnhap",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taiKhoan\": \"kimoanh1988\",\r\n  \"matKhau\": \"999999\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/dangnhap",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"dangnhap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "xoanguoidung",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImpheW5ndXllbjE5ODgiLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IktoYWNoSGFuZyIsImlhdCI6MTYyNjk0NDE5MSwiZXhwIjoxNjI3OTgwOTkxfQ.C2R1bxG63RNkkNmZny2tZLUoTmy8Dia-4jIdrE44CVM",
+								"description": "khachhang",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6Im9hbmh0cmFuMTk4OCIsImhvVGVuIjoiVHJhbiBPYW5oIiwiZW1haWwiOiJvYW5odHJhbkBnbWFpbC5jb20iLCJzb0R0IjoiMDkxODEyMzk1MSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJLaGFjaEhhbmciLCJpYXQiOjE2MjY5NDQyMjQsImV4cCI6MTYyNzk4MTAyNH0._17JnZwFsl1BO1qvB9bOAp9ETPijKqloQ9u2h7hp764",
+								"description": "khachhang",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImpheW5ndXllbjIwMDAiLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IkFkbWluIiwiaWF0IjoxNjI2OTQ0OTkxLCJleHAiOjE2Mjc5ODE3OTF9.TmL8UaqeaFTHMuXrBTD7lLDtKWWAb14hbwDQZobCzXQ",
+								"description": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/xoanguoidung?TaiKhoan=tuanoanh",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"xoanguoidung"
+							],
+							"query": [
+								{
+									"key": "TaiKhoan",
+									"value": "tuanoanh"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "capnhatthongtinnguoidung",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImpheW5ndXllbjE5ODgiLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IkFkbWluIiwiaWF0IjoxNjI2OTYwNTg3LCJleHAiOjE2Mjc5OTczODd9.wnHU15txlUBGVrp4JUZSkDWZiLtG12vczoTaGdZeDUE",
+								"description": "khachhang",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taiKhoan\": \"jaynguyen1988\",  \r\n  \"email\": \"jaynguyen1988@gmail.com\",\r\n  \"soDt\": \"999999999\",\r\n  \"maNhom\": \"GH01\",\r\n  \"maLoaiNguoiDung\": \"Admin\",\r\n  \"hoTen\": \"Nguyen Tuan UpdateV2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/capnhatthongtinnguoidung",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"capnhatthongtinnguoidung"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "laydanhsachnguoidungphantrang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/laydanhsachnguoidungphantrang?MaNhom=GH01&soTrang=1&soPhanTuTrenTrang=20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"laydanhsachnguoidungphantrang"
+							],
+							"query": [
+								{
+									"key": "MaNhom",
+									"value": "GH01"
+								},
+								{
+									"key": "soTrang",
+									"value": "1"
+								},
+								{
+									"key": "soPhanTuTrenTrang",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "timkiemnguoidung",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/timkiemnguoidung?MaNhom=GH01&tuKhoa=tuan",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"timkiemnguoidung"
+							],
+							"query": [
+								{
+									"key": "MaNhom",
+									"value": "GH01"
+								},
+								{
+									"key": "tuKhoa",
+									"value": "tuan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "timkiemnguoidungphantrang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/timkiemnguoidungphantrang?MaNhom=GH01&tuKhoa=tuan&soTrang=1&soPhanTuTrenTrang=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"timkiemnguoidungphantrang"
+							],
+							"query": [
+								{
+									"key": "MaNhom",
+									"value": "GH01"
+								},
+								{
+									"key": "tuKhoa",
+									"value": "tuan"
+								},
+								{
+									"key": "soTrang",
+									"value": "1"
+								},
+								{
+									"key": "soPhanTuTrenTrang",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "thongtintaikhoan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImJhb3RyYW0iLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IktoYWNoSGFuZyIsImlhdCI6MTYyNzI2NzIzNCwiZXhwIjoxNjI4MzA0MDM0fQ.3tsvd9E5BJ1C0HGeJ-NqR5bfoJMCcWPNK_7Kb1RWOrU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taiKhoan\":\"baotram\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/thongtintaikhoan",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"thongtintaikhoan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "themnguoidung",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6Im9hbmh0cmFuMTk4OCIsImhvVGVuIjoiTmd1eWVuIFR1YW4iLCJlbWFpbCI6ImpheW5ndXllbjE5ODhAZ21haWwuY29tIiwic29EdCI6IjA5MTgxMjM5NTEiLCJtYU5ob20iOiJHSDAxIiwibWFMb2FpTmd1b2lEdW5nIjoiQWRtaW4iLCJpYXQiOjE2MjcwMzI0NTcsImV4cCI6MTYyODA2OTI1N30.hkwAGjcSVQAqvqUUuRlncRYzW26nnIuNlxwfC2cMQ8o",
+								"description": "Admin",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImJhb3RyYW0iLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IktoYWNoSGFuZyIsImlhdCI6MTYyNzAzMjU5NiwiZXhwIjoxNjI4MDY5Mzk2fQ.pNN9I4pM0kTNOSsfLZ-4Ohw8rz_gwTRLRB532qeQdjg",
+								"description": "KhachHang",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"taiKhoan\": \"baotram2014\",\r\n    \"matKhau\": \"999999\",\r\n    \"email\": \"jaynguyen1988@gmail.com\",\r\n    \"soDt\": \"0918123951\",\r\n    \"maNhom\": \"GH01\",\r\n    \"maLoaiNguoiDung\": \"Admin\",\r\n    \"hoTen\": \"Nguyen Tuan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/themnguoidung",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"themnguoidung"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "quanlyphim",
+			"item": [
+				{
+					"name": "themphim",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImtpbW9hbmgxOTg4IiwiaG9UZW4iOiJOZ3V5ZW4gVHVhbiIsImVtYWlsIjoiamF5bmd1eWVuMTk4OEBnbWFpbC5jb20iLCJzb0R0IjoiMDkxODEyMzk1MSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJBZG1pbiIsImlhdCI6MTYzMDg4MjQ4OCwiZXhwIjoxNjMxOTE5Mjg4fQ.xy4xmeCKdFpkEjoMgKaJ1vuxi1pEEhycGv1ZyQA1l3g",
+								"description": "admin",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImJhb3RyYW0iLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IktoYWNoSGFuZyIsImlhdCI6MTYyNzI3ODQ4NywiZXhwIjoxNjI4MzE1Mjg3fQ.XMr_5IR15RJPFtg30RmuhaFJjFmjlnFuj3KZxYh6or0",
+								"description": "KhachHang",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maPhim\":4,\r\n  \"tenPhim\": \"Startrek\",\r\n  \"biDanh\": \"Rider\",\r\n  \"trailer\": \"https://www.youtube.com/watch?v=6ZfuNTqbHE8\",\r\n  \"hinhAnh\": \"\",\r\n  \"moTa\": \"There was an idea Avengers: Infinity War. In theaters April 27\",\r\n  \"maNhom\": \"GP01\",\r\n  \"ngayKhoiChieu\": \"2021-07-27T12:08:21.657\",\r\n  \"danhGia\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/themphim",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"themphim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "laydanhsachphim",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/laydanhsachphim",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"laydanhsachphim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "laydanhsachphimphantrang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/laydanhsachphimphantrang/?maNhom=GP01&tenPhim=&soTrang=1&soPhanTuTrenTrang=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"laydanhsachphimphantrang",
+								""
+							],
+							"query": [
+								{
+									"key": "maNhom",
+									"value": "GP01"
+								},
+								{
+									"key": "tenPhim",
+									"value": ""
+								},
+								{
+									"key": "soTrang",
+									"value": "1"
+								},
+								{
+									"key": "soPhanTuTrenTrang",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "laydanhsachphimtheongay",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/laydanhsachphimtheongay/?tenPhim=&tuNgay=25-07-2021&denNgay=28-07-2021",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"laydanhsachphimtheongay",
+								""
+							],
+							"query": [
+								{
+									"key": "maNhom",
+									"value": "GP01",
+									"disabled": true
+								},
+								{
+									"key": "tenPhim",
+									"value": ""
+								},
+								{
+									"key": "soTrang",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "soPhanTuTrenTrang",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "tuNgay",
+									"value": "25-07-2021"
+								},
+								{
+									"key": "denNgay",
+									"value": "28-07-2021"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "xoaphim",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6Im9hbmh0cmFuMTk4OCIsImhvVGVuIjoiTmd1eWVuIFR1YW4iLCJlbWFpbCI6ImpheW5ndXllbjE5ODhAZ21haWwuY29tIiwic29EdCI6IjA5MTgxMjM5NTEiLCJtYU5ob20iOiJHSDAxIiwibWFMb2FpTmd1b2lEdW5nIjoiQWRtaW4iLCJpYXQiOjE2Mjc2MTYzMzYsImV4cCI6MTYyODY1MzEzNn0.xRha5QDq8zBlD9V40Ev2joF-g_3WQWnIHvNTm-4JbHo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/xoaphim?maPhim=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"xoaphim"
+							],
+							"query": [
+								{
+									"key": "maPhim",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploadhinhanhphim",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImtpbW9hbmgxOTg4IiwiaG9UZW4iOiJOZ3V5ZW4gVHVhbiIsImVtYWlsIjoiamF5bmd1eWVuMTk4OEBnbWFpbC5jb20iLCJzb0R0IjoiMDkxODEyMzk1MSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJBZG1pbiIsImlhdCI6MTYzMDg4MjQ4OCwiZXhwIjoxNjMxOTE5Mjg4fQ.xy4xmeCKdFpkEjoMgKaJ1vuxi1pEEhycGv1ZyQA1l3g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/NGUYEN ANH TUAN/OneDrive/Máy tính/Unsplash/blackpanther.webp"
+								},
+								{
+									"key": "maPhim",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/uploadhinhanhphim",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"uploadhinhanhphim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "capnhatphim",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImtpbW9hbmgxOTg4IiwiaG9UZW4iOiJOZ3V5ZW4gVHVhbiIsImVtYWlsIjoiamF5bmd1eWVuMTk4OEBnbWFpbC5jb20iLCJzb0R0IjoiMDkxODEyMzk1MSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJBZG1pbiIsImlhdCI6MTYyODgyMTA4NiwiZXhwIjoxNjI5ODU3ODg2fQ.KcCMEQYOFRKZkSAMKnkJoR5tkChVMz5BCUU2HJJln0k",
+								"description": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maPhim\": 2,\r\n  \"tenPhim\": \"Co Ba Sai Gon Update V3\",\r\n  \"biDanh\": \"Co Ba Update v3\",\r\n  \"trailer\": \"https://www.youtube.com/watch?v=6ZfuNTqbHE8\",\r\n  \"hinhAnh\": \"https://unsplash.com/photos/N840KRXQPa4\",\r\n  \"moTa\": \"There was an idea Avengers: Infinity War. In theaters April 27\",\r\n  \"maNhom\": \"GP01\",\r\n  \"ngayKhoiChieu\": \"2021-07-27T12:08:21.657\",\r\n  \"danhGia\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/capnhatphim",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"capnhatphim"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "quanlyrap",
+			"item": [
+				{
+					"name": "laythongtinhethongrap",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlyrap/laythongtinhethongrap?maHeThongRap=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyrap",
+								"laythongtinhethongrap"
+							],
+							"query": [
+								{
+									"key": "maHeThongRap",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "laythongtincumraptheohethong",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlyrap/laythongtincumraptheohethong?maHeThongRap=BHDStar",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyrap",
+								"laythongtincumraptheohethong"
+							],
+							"query": [
+								{
+									"key": "maHeThongRap",
+									"value": "BHDStar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
